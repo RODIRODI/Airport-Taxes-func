@@ -1,35 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
 
-<body>
-     
-  <h1>Hello</h1>
- 
-   <input id='mtow' name="name" type="text" value='Mtow'>
-   <hr>
-   <input id='landing' type="text" value='Landing'>
-  
-   <script >
-  
-    var M =prompt ('Introduce MTOW');
-    var Landing =0 ;
-    var Parking=0 ; 
-    var Approach =0;
-    var Concession =0;
-    var Supervision =0;
-    var Handling =0;
-    var Lighting =0;
-    var paxeu =0;
-    var paxus  =0;
-  
+// const {LANDING }=process.env  
+
+   
+
+
+    var Landing ;
+    var Parking ; 
+    var Approach ;
+    var Concession 
+    var Supervision 
+    var Handling 
+    var Lighting 
+    var paxeu 
+    var paxus  
+  }
   //var M=0;
-  {LANDING}= process.env;
    
    if ((M<=7) && (M>0))
      { 
@@ -51,8 +36,8 @@
   
    if ((M<=12) && (M>7))
      { 
-       Landing =Math.ceil(M)*LANDING*100/100; 
-        //Landing =Math.ceil(M)*42*100/100; 
+       // Landing =Math.ceil(M)*LANDING*100/100; 
+        Landing =Math.ceil(M)*42*100/100; 
         Parking =Math.round(Math.ceil(M)*(3.47)*100)/100; 
         Approach =Math.round(Math.sqrt(Math.ceil(M))*144*100)/100; 
   
@@ -246,7 +231,7 @@
     Handling=1322;
     Lighting=781;
     paxeu =182;
-    paxus =242;    
+    paxus =242;    ;   ;
     }
   if ((M<=125) && (M>120))
      { 
@@ -351,14 +336,7 @@
     }
   
     document.getElementById('landing').value= Landing; 
-      
+     
   
-    document.getElementById('mtow').value= M ;
-  
-  
-  
-  </script>
- 
     
-</body>
-</html>
+document.getElementById('mtow').value= M ;
